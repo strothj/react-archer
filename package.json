@@ -1,14 +1,11 @@
 {
-  "name": "react-archer",
+  "name": "@strothj/react-archer",
   "description": "Draw arrows between DOM elements in React",
   "main": "lib/react-archer.js",
   "module": "lib/react-archer.js",
   "version": "0.2.0",
   "license": "MIT",
   "dependencies": {
-    "react": "16.2.0",
-    "react-dom": "16.2.0",
-    "react-scripts": "1.1.1",
     "resize-observer-polyfill": "1.5.0"
   },
   "homepage": "https://github.com/pierpo/react-archer",
@@ -53,11 +50,19 @@
     "html-webpack-plugin": "2.30.1",
     "jest": "v21",
     "prettier": "1.10.2",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-scripts": "1.1.1",
     "style-loader": "0.20.2"
+  },
+  "peerDependencies": {
+    "react": "^16.2.0"
   },
   "jest": {
     "collectCoverage": true,
-    "collectCoverageFrom": ["src/**/*.{js,jsx}"],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
     "setupFiles": [
       "./shim.js",
       "./setup-tests.js"
